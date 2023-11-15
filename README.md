@@ -53,9 +53,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Cypress](https://www.cypress.io/)
 
 
-## 🔗 Link do projeto
-Se quiser ver o projeto no ar, clique [aqui](https://ignite-devstore-jrs.vercel.app).
-
 ## 🚀 Como executar
 
 Clone o projeto e acesse a pasta do mesmo.
@@ -67,8 +64,7 @@ $ cd ignite-devstore
 ```
 
 - A Aplicação consta com uma api dedicada nesse endereço: https://ignite-devstore-api-jrs.vercel.app/ 
-  ou podendo usar a local de teste como http://localhost:3000.
-
+- pois para realizar os builds precisou de uma, para rodar localmente pode como http://localhost:3000 nas Env.
 
 Para iniciá-lo, siga os passos abaixo:
 ```bash
