@@ -120,6 +120,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) pa
   ➜ npm i cypress -D
     npx cypress open 
 
+  ➜ npm i @t3-oss/env-nextjs
 
   # Adicionando essa configuração em next.config.js para não quebrar o build erros de ESLINT e TypeScript
   # esses erros devem ser sempre arrumados antes dessa etapa.
