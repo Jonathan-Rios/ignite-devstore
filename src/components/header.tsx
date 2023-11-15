@@ -3,6 +3,7 @@ import Image from 'next/image'
 
 import { CartWidget } from './cart-widget'
 import { SearchForm } from './search-form'
+import { Suspense } from 'react'
 
 export function Header() {
   return (
@@ -12,7 +13,13 @@ export function Header() {
           devstore
         </Link>
 
-        <SearchForm />
+        {
+          // ? Tivemos um erro pois esse componente vai em todas as páginas, e ele é client-side
+          // ? Usando o Suspense criamos uma "fronteira - Boundary" e entregamos null até estiver carregada
+        }
+        <Suspense fallback={null}>
+          <SearchForm />
+        </Suspense>
       </div>
 
       <div className="flex items-center gap-4">
