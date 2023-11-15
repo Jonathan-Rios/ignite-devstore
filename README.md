@@ -119,6 +119,20 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE.md) pa
 
   ➜ npm i cypress -D
     npx cypress open 
+
+
+  # Adicionando essa configuração em next.config.js para não quebrar o build erros de ESLINT e TypeScript
+  # esses erros devem ser sempre arrumados antes dessa etapa.
+  
+    const nextConfig = {
+      eslint: {
+        ignoreDuringBuilds: true,
+      },
+      typescript: {
+        ignoreBuildErrors: true,
+      },
+    ...resto das configs 
+    }
 ```
 
 
